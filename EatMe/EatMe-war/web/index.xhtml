@@ -10,7 +10,10 @@
         <ui:composition template="./template.xhtml">
 
             <ui:define name="left">
-                left
+                <h2>Weather</h2>
+                <div id="weather-box">
+                    <p>Todays weather: <h:outputText value="#{weatherViewModel.skyConditions}" /></p>
+                </div>
             </ui:define>
 
             <ui:define name="content">
