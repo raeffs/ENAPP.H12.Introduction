@@ -19,6 +19,12 @@ public class UserManager {
     @Inject
     private UserFacade userFacade;
 
+    public UserManager() {}
+    
+    public UserManager(UserFacade injectedUserFacade) {
+        userFacade = injectedUserFacade;
+    }
+
     public boolean checkPasswordForUsername(String username, String password) {
         List<eatme.entity.User> users = userFacade.findAll();
         for (eatme.entity.User user : users) {
