@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='EatMe-ejb' version='1.0'>
+	<schema type='-xmlschema' package='eatme.boundary.dto' name='WeatherRestAnswer'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/WeatherRestAnswer/api.met.no/weatherapi/locationforecast/1.8/schema.xsd' origLocation='http://api.met.no/weatherapi/locationforecast/1.8/schema' origLocationType='url'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>
