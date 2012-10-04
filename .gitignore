@@ -7,3 +7,6 @@
 /EatMe/build/
 /EatMe/EatMe-war/dist/
 /EatMe/dist/
+/EatMe-Maven/EatMe-Maven-web/target/
+/EatMe-Maven/EatMe-Maven-ejb/target/
+/EatMe-Maven/EatMe-Maven-ear/target/

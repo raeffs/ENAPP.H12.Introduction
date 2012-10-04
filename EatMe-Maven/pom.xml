@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ch.hslu.enapp.h12</groupId>
+  <artifactId>EatMe-Maven</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>EatMe-Maven</name>
+  <modules>
+    <module>EatMe-Maven-ear</module>
+    <module>EatMe-Maven-web</module>
+    <module>EatMe-Maven-ejb</module>
+  </modules>
+</project>
