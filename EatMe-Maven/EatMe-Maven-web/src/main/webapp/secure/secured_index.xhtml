@@ -7,7 +7,7 @@
 
     <body>
 
-        <ui:composition template="./resources/templates/template.xhtml">
+        <ui:composition template="../resources/templates/template_secure.xhtml">
 
             <ui:define name="left">
                 <h2>Weather</h2>
@@ -26,13 +26,9 @@
                         </div>
                     </c:forEach>
                 </div>
-                <h:form id="chat-form" acceptcharset="UTF-8" enctype="application/x-www-form-urlencoded;charset=UTF-8">
-                    <h:commandButton value="Login" action="/secure/secured_index?faces-redirect=true" />
-                </h:form>
-            </ui:define>
-
-            <ui:define name="bottom">
-                bottom
+                <div id="chat-form">
+                    
+                </div>
             </ui:define>
 
         </ui:composition>

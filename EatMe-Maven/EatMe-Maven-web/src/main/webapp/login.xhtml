@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="./resources/templates/template.xhtml">
+
+            <ui:define name="left">
+                left
+            </ui:define>
+
+            <ui:define name="content">
+                <h1>
+                    <h:outputFormat value="EatMe Login" />
+                </h1>
+                <p>
+                    <form method="POST" action="j_security_check">
+                        <h:panelGrid columns="2" bgcolor="#eff5fa" cellspacing="5" frame="box">
+                            <h:outputLabel value="User ID:"/>
+                            <h:inputText id="j_username" tabindex="1" />
+                            <h:outputLabel value="Password:"/>
+                            <h:inputSecret id="j_password" tabindex="2"/>
+                            <h:outputLabel value=""/>
+                            <h:commandButton id="login" value="Login"/>
+                        </h:panelGrid>
+                    </form>
+                </p>
+            </ui:define>
+
+            <ui:define name="bottom">
+                bottom
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

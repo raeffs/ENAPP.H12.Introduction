@@ -6,8 +6,8 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link href="./resources/css/default.css" rel="stylesheet" type="text/css" />
-        <link href="./resources/css/cssLayout.css" rel="stylesheet" type="text/css" />
+        <h:outputStylesheet name="css/default.css" />
+        <h:outputStylesheet name="css/cssLayout.css" />
         <title>ENAPP.H12.Introduction - JSF Webinterface</title>
     </h:head>
 
@@ -24,9 +24,9 @@
                 <ui:insert name="content">Content</ui:insert>
             </div>
         </div>
-        <div id="bottom">
-            <ui:insert name="bottom">Bottom</ui:insert>
-        </div>
+        <h:form id="bottom" acceptcharset="UTF-8" enctype="application/x-www-form-urlencoded;charset=UTF-8">
+            <h:commandLink actionListener="#{userSession.logout(evt)}" value="Logout" />
+        </h:form>
 
     </h:body>
 
